@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  name: 'pol10'
+
+steps:
+- checkout: self
+
+- script: mvn clean package
+  displayName: 'Build Maven Project'
