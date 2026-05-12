@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: 'pol10'
+  name: 'MyLocalPool'
 
 steps:
 
@@ -13,12 +13,12 @@ steps:
 
 - script: |
     echo "Simulating deployment..."
-    mkdir deployed
+    if not exist deployed mkdir deployed
     copy target\*.jar deployed\
     echo "Deployment successful!"
   displayName: 'Simulate Deployment'
 
 - script: |
-    echo "Contents of deployed folder:"
-    dir deployed
-  displayName: 'Verify Deployment Output'
+    echo "Running the JAR file..."
+    java -jar deployed\*.jar
+  displayName: 'Run Application'
