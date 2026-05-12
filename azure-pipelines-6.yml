@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: 'pol10'
+  name: 'pol2'
 
 steps:
 - checkout: self
