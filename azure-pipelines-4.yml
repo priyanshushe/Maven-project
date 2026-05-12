@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: 'MyLocalPool'
+  name: 'pol10'
 
 steps:
 
