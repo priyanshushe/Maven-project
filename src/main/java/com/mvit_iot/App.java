@@ -11,7 +11,7 @@ public class App
         System.out.println( "Hello welcome to devops learning" );
         for(int i=0;i<=10;i++)
         {
-            System.out.println("is is:" + i);
+            System.out.println("is:" + i);
         }
     }
 }
